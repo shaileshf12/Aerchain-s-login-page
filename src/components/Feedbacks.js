@@ -56,7 +56,7 @@ function Feedbacks() {
                     flexDirection: "column",
                     alignItems: "center",
                     width: "60%",
-                    height: "18rem",
+                    height: "17rem",
                   }}
                 >
                   <img
