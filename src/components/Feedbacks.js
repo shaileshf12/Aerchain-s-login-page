@@ -23,7 +23,7 @@ function Feedbacks() {
         backgroundRepeat: "no-repeat, no-repeat",
         backgroundPosition: "top 5px right 30px, bottom 5px left 30px",
         backgroundSize: "6rem",
-        height: "20rem",
+        height: "21.5rem",
       }}
     >
       <div style={{width: "100%", height: "100%" }}>

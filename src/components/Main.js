@@ -8,10 +8,10 @@ function Main() {
       <Box sx={{flexGrow:'1'}}>
         <Grid container>
             <Navbar/>
-            <Grid item lg={8} xs={8}>
+            <Grid item lg={7.8} xs={7.8}>
                 <Welcome/>
             </Grid>
-            <Grid item lg={4} xs={4}>
+            <Grid item lg={4.2} xs={4.2}>
                 3
             </Grid>
         </Grid>
