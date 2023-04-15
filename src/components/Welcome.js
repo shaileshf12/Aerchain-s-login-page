@@ -11,17 +11,28 @@ function Welcome() {
       sx={{
         display: "flex",
         flexDirection: "column",
-        gap:'2rem',
+        gap: "5vh",
         alignItems: "center",
         backgroundImage: `url(${backgroundImg})`,
         backgroundSize: "cover",
         backgroundRepeat: "no-repeat",
         backgroundPosition: "center",
+        height: '100%'
       }}
     >
-      <Typography variant="body1" sx={{marginTop:'1rem', fontSize:'1.8vw', color:'white'}}>Welcome to Aerchain</Typography>
-      <Feedbacks/>
-      <Partners/>
+      <Typography
+        variant="body1"
+        sx={{
+          marginTop: "1rem",
+          fontSize: "1.8vw",
+          color: "white",
+          fontFamily:"'Poppins', sans-serif",
+        }}
+      >
+        Welcome to Aerchain
+      </Typography>
+      <Feedbacks />
+      <Partners />
     </Box>
   );
 }

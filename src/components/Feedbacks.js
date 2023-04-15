@@ -9,12 +9,11 @@ import Card from "@mui/material/Card";
 import CardContent from "@mui/material/CardContent";
 import { Typography } from "@mui/material";
 
-
 function Feedbacks() {
   return (
     <Box
       sx={{
-        width: "70%",
+        width: "40vw",
         display: "flex",
         justifyContent: "center",
         alignItems: "center",
@@ -22,13 +21,14 @@ function Feedbacks() {
         backgroundImage: `url(${dots}), url(${dots})`,
         backgroundRepeat: "no-repeat, no-repeat",
         backgroundPosition: "top 5px right 30px, bottom 5px left 30px",
-        backgroundSize: "6rem",
-        height: "21.5rem",
+        backgroundSize: "8.5vw",
+        height: "50vh",
+        
       }}
     >
-      <div style={{width: "100%", height: "100%" }}>
+      <div style={{ width: "100%", height: "42vh"}}>
         <Carousel
-          style={{ display: "none"}}
+          style={{ display: "none" }}
           animation="slide"
           indicators={false}
           interval="8000"
@@ -45,8 +45,9 @@ function Feedbacks() {
                   display: "flex",
                   justifyContent: "center",
                   alignItems: "center",
-                  height: "20rem",
+                  height: "42vh",
                   width: "100%",
+                  // border: "1px solid white" 
                 }}
               >
                 {/* <img src={card.image} alt="" style={{height:'5rem'}}/> */}
@@ -55,30 +56,47 @@ function Feedbacks() {
                     display: "flex",
                     flexDirection: "column",
                     alignItems: "center",
-                    width: "60%",
-                    height: "17rem",
+                    width: "23vw",
+                    // height: "17rem",
+                    borderRadius: ".5vw",
+                    height: "42vh",
                   }}
                 >
                   <img
                     src={card.image}
                     alt=""
-                    style={{ width: "5rem", height: "5rem" }}
+                    style={{ width: "5vw", height: "10vh", marginTop:'1vh' }}
                   />
                   {/* <CardHeader>
                 
                 </CardHeader> */}
-                  <Typography variant="subtitle2" align="center" sx={{fontSize:'1.05vw'}}>
+                  <Typography
+                    variant="subtitle2"
+                    align="center"
+                    sx={{ fontSize: "1vw" }}
+                  >
                     {card.heading}
                   </Typography>
                   <CardContent>
-                    <Typography variant="body2" align="center" sx={{fontSize:'1vw'}}>
+                    <Typography
+                      variant="body2"
+                      align="center"
+                      sx={{ fontSize: ".9vw", color: "rgb(117, 114, 114)" }}
+                    >
                       {card.message}
                     </Typography>
                   </CardContent>
-                  <Typography variant="caption" display="block" sx={{fontSize:'1vw'}}>
+                  <Typography
+                    variant="caption"
+                    display="block"
+                    sx={{ fontSize: ".9vw" }}
+                  >
                     <b>{card.company}</b>
                   </Typography>
-                  <Typography variant="caption" display="block" sx={{fontSize:'.8vw'}}>
+                  <Typography
+                    variant="caption"
+                    sx={{ fontSize: ".8vw" }}
+                  >
                     {card.address}
                   </Typography>
                 </Card>

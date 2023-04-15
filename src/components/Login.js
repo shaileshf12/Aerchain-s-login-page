@@ -15,7 +15,7 @@ import { FormControlLabel } from "@mui/material";
 import "./style.css";
 import PhoneAndroidOutlinedIcon from "@mui/icons-material/PhoneAndroidOutlined";
 import QuestionAnswerOutlinedIcon from "@mui/icons-material/QuestionAnswerOutlined";
-import chatIcon from "../assets/chatIcon.png";
+import chatIcon from "../assets/chatIcon.webp";
 import { motion } from "framer-motion";
 
 function Login() {
@@ -26,64 +26,70 @@ function Login() {
         marginLeft: "4rem",
         display: "flex",
         justifyContent: "space-between",
-        // border:'6px solid black'
+        // border:'1px solid black',
+        // height:'80vh',
+        // width:'29.5vw'
       }}
     >
       <Box
         sx={{
           display: "flex",
           flexDirection: "column",
+          alignItems:'start',
           flexWrap: "wrap",
           gap: "1.5rem",
-          width: "20vw",
-          marginTop: "2rem"
+          width: "17rem",
+          // border:'1px solid black',
+          marginTop: "1rem"
         }}
       >
-        <Typography variant="h5" component="h5">
-          <b>Supplier Login</b>
+        <Typography variant="h5" sx={{fontSize:'2vw', fontFamily:"'Poppins', sans-serif"}}>
+          Supplier Login
         </Typography>
 
-        <div>
-          <p style={{ fontSize: ".8rem" }}>E-mail</p>
+        <div style={{}}>
+          <p style={{ fontSize: "1vw" }}>E-mail</p>
           <TextField
             id="input-with-icon-textfield"
             variant="outlined"
             placeholder="Enter email address"
+            type="email"
             InputProps={{
               style: {
-                height: "1.8rem",
+                height: "4.5vh",
                 width: "20vw",
-                fontSize: ".8rem",
+                fontSize: "1vw",
               },
               startAdornment: (
                 <InputAdornment position="start">
-                  <EmailOutlinedIcon sx={{ height: "1.2rem" }} />
+                  <EmailOutlinedIcon sx={{ height: "3.5vh" }} />
                 </InputAdornment>
               ),
             }}
           />
 
-          <p style={{ fontSize: ".8rem" }}>Password</p>
+          <p style={{ fontSize: "1vw" }}>Password</p>
           <TextField
             id="input-with-icon-textfield"
             variant="outlined"
             sx={{}}
             placeholder="Password"
+            type="password"
             InputProps={{
               style: {
-                height: "1.8rem",
+                height: "4.5vh",
                 width: "20vw",
-                fontSize: ".8rem",
+                fontSize: "1vw",
               },
               startAdornment: (
                 <InputAdornment position="start">
-                  <HttpsOutlinedIcon sx={{ height: "1.2rem" }} />
+                  <HttpsOutlinedIcon sx={{ height: "1.5vw" }} />
                 </InputAdornment>
               ),
               endAdornment: (
                 <InputAdornment position="end">
                   <VisibilityOffOutlinedIcon
-                    sx={{ height: "1.2rem", cursor: "pointer" }}
+                    sx={{ height: "1.5vw", cursor: "pointer" }}
                   />
                 </InputAdornment>
               ),
@@ -91,7 +97,7 @@ function Login() {
           />
         </div>
         <div>
-          <Button variant="contained" sx={{ width: "20vw", height: "1.7rem" }}>
+          <Button variant="contained" sx={{ width: "20vw", height: "4.5vh", textTransform: "none", fontSize:'1vw' }}>
             Log In
           </Button>
           <Box
@@ -122,7 +128,7 @@ function Login() {
               height: "0",
             }}
           />
-          <p style={{ margin: "1rem", marginTop: "-.7rem" }}>or</p>
+          <p style={{ margin: "1vw", marginTop: "-1.4vh", fontSize:'1.2vw' }}>or</p>
           <span
             style={{
               border: ".01rem solid rgb(223, 219, 219)",
@@ -142,20 +148,21 @@ function Login() {
             variant="outlined"
             sx={{
               width: "20vw",
-              height: "1.7rem",
+              height: "4.5vh",
               textTransform: "none",
               color: "black",
-              fontSize: ".8rem",
+              fontSize: "1vw",
               color: "rgb(104, 101, 101)",
               fontWeight: "1vw",
+              borderColor: 'rgb(117, 114, 114)'
             }}
           >
-            <PhoneAndroidOutlinedIcon sx={{ height: "1.2rem" }} />
+            <PhoneAndroidOutlinedIcon sx={{ height: "3vh" }} />
             <p style={{}}>Continue using OTP</p>
           </Button>
           <p style={{ fontSize: ".9vw" }}>
-            You do not have an account?
-            <span style={{ textDecoration: "underline", color: "#1976d2" }}>
+            You do not have an account?{' '}
+            <span style={{ textDecoration: "underline", color: "#1976d2", cursor:'pointer' }}>
               Join Now
             </span>
           </p>
@@ -171,12 +178,12 @@ function Login() {
           alignSelf: "center",
           cursor:'pointer',
           backgroundColor:'white',
-        //   marginLeft:'1rem'
+          marginTop:'12vh'
         }}
-        whileHover={{ x: -45, transition: { duration: "1" } }}
+        whileHover={{ x: [0, -45], transition: { duration: "1" } }}
       >
         <motion.div style={{ padding:'.5rem'}} className="chat">
-          <img src={chatIcon} width="30rem" height="30rem" style={{}} />
+          <img src={chatIcon} width="30vw" height="30vw" style={{}} />
         </motion.div>
         <motion.div className="live-chat" alignSelf="center">LIVE CHAT</motion.div>
       </motion.div>
